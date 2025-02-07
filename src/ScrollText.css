@@ -1,0 +1,57 @@
+.trending-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.trending-topics-wrapper {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.trending-topics {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.trending-topics::-webkit-scrollbar {
+  display: none;
+}
+
+.trending-topics span {
+  padding: 8px 16px;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #555;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.trending-topics span:hover {
+  background-color: #FBC108;
+  color: #fff;
+}
+
+.scroll-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.scroll-arrow img {
+  width:10px;
+  height: auto;
+}
