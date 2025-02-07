@@ -3,6 +3,7 @@ import Navbar from './Navbar.jsx'
 import ScrollText from './ScrollText.jsx'
 import Herosection from './Herosection.jsx'
 import TrendingTech from './TrendingTech.jsx'
+import Section3 from './Section-3.jsx'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <ScrollText />
       <Herosection />
       <TrendingTech />
+      <Section3 /> 
     </div>
   )
 }

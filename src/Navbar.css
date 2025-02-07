@@ -2,47 +2,47 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
+}
 
-  }
-  
-  .navbar-container {
-    max-width: 1200px;
+.navbar-container {
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     display: flex;
-    justify-content: space-around; /* Ensure even spacing */
     align-items: center;
+    justify-content: space-around;
+    gap: 30px;
     padding: 10px 20px;
     background-color: #ffffff;
-    border-bottom: 2px solid #e0e0e0;
+    /* border-bottom: 2px solid #e0e0e0; */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-links a {
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.); */
+}
+
+.nav-links a {
     margin: 0 15px;
     text-decoration: none;
     color: #333;
     font-weight: 500;
     position: relative;
-   
-  }
-  .nav-links{
-    background-color:#F1F1F1 ;
-    border-radius:50px;
+}
+
+.nav-links {
+    background-color: #F1F1F1;
+    border-radius: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 432px;
     height: 47px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the text */
-  }
+    justify-content: center;
+}
 
-  .nav-links a::after {
+.nav-links a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -51,56 +51,58 @@ body {
     height: 2px;
     background-color: transparent;
     transition: background-color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: #000000;
     font-weight: 1000;
     text-decoration: none;
-  }
+}
 
-  .nav-links a:hover::after {
+.nav-links a:hover::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: yellow;
-  }
-  
-  .logo{
+    background-color: #FBC108;
+}
+
+.logo {
     width: 100px;
     height: 41px;
-  }
-  
-  .search-bar input {
+}
+
+.search-bar input {
     padding: 10px 10px;
-    border: 0px;
+    border: 0;
     background-color: #F1F1F1;
     height: fit-content;
     font-size: 16px;
     box-sizing: border-box;
-  }
-  .search-bar{
-    border: 1px solid rgb(255, 255, 255);
+}
+
+.search-bar {
+    /* border: 1px solid rgb(255, 255, 255); */
     padding: 5px 10px 5px 15px;
     width: 500px;
     height: 48px;
-    background-color:#F1F1F1;
+    background-color: #F1F1F1;
     border-radius: 50px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-  }
-  
-  .search-bar input:focus {
+}
+
+.search-bar input:focus {
     outline: none;
-  }
-  .Login{
+}
+
+.Login {
     width: 94px;
     height: 32px;
-    background-color:#FBC108;
+    background-color: #FBC108;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -109,42 +111,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px; /* Add gap between icon and text */
-  }
-  .Login a{
+    gap: 5px;
+}
+
+.Login a {
     text-decoration: none;
     font-size: 18px;
     color: rgb(0, 0, 0);
-  }
-  
-  .trending-section {
+}
+
+.trending-section {
     margin-top: 30px;
     text-align: center;
-  }
-  
-  .trending-section h2 {
+}
+
+.trending-section h2 {
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .trending-topics {
+}
+
+.trending-topics {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-  }
-  
-  .trending-topics span {
+}
+
+.trending-topics span {
     padding: 8px 16px;
     background-color: #e9ecef;
     border-radius: 20px;
     font-size: 14px;
     color: #555;
     transition: background-color 0.3s ease;
-  }
-  
-  .trending-topics span:hover {
+}
+
+.trending-topics span:hover {
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
-  }
+}

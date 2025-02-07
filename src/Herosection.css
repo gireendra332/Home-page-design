@@ -1,5 +1,6 @@
 /* Styling for Hero Section */
 .hero-section {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,42 +8,60 @@
     padding: 40px;
     width: 1440px;
     height: 597px;
+}
 
-  }
-  
-  /* Left Side (Empty or Replace with Image) */
-  .hero-left {
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Left Side (Empty or Replace with Image) */
+.hero-left,
+.hero-right {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-left {
     flex: 1;
     display: flex;
     justify-content: center;
-  }
-  
-  .hero-image {
+}
+
+.hero-image {
     width: 100%;
     max-width: 400px; 
-  }
-  
- 
-  .hero-right {
+}
+
+.hero-right {
     flex: 1;
     color: white;
     padding-left: 40px;
-  }
-  
-  .hero-right h1 {
+}
+
+.hero-right h1 {
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.3;
-  }
-  
-  .hero-right p {
+}
+
+.hero-right p {
     color: #cbd5e1;
     margin-top: 10px;
     font-size: 1.1rem;
-  }
-  
-  
-  .hero-badge {
+}
+
+.hero-badge {
     background-color: #FFC107;
     color: #0E2748;
     font-weight: bold;
@@ -50,5 +69,4 @@
     border-radius: 5px;
     display: inline-block;
     font-size: 14px;
-  }
-  
+}
