@@ -4,7 +4,11 @@ import ScrollText from './ScrollText.jsx'
 import Herosection from './Herosection.jsx'
 import TrendingTech from './TrendingTech.jsx'
 import Section3 from './Section-3.jsx'
-
+import StatSection from './statSection.jsx'
+import Section4 from './Section-4.jsx'
+import GridCards from './GridCards.jsx'
+import TopCategory from './TopCategory.jsx'
+import Footer from './Footer.jsx'
 function App() {
   return (
     <div>
@@ -13,6 +17,12 @@ function App() {
       <Herosection />
       <TrendingTech />
       <Section3 /> 
+      <StatSection/>
+      <Section4/>
+      <GridCards/>
+      <TopCategory/>
+      <Footer/>
+
     </div>
   )
 }

@@ -1,0 +1,52 @@
+.section-container {
+    position: relative;
+    background-image: url("/images/background.jpg"); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+  }
+  
+  .section-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0c2340;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* .section-title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #f4b400;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  } */
+  
+  .section-text {
+    font-size: 16px;
+    color: #444;
+    margin-top: 15px;
+  }
+  
+  .corner-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url("/images/corner-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+  

@@ -24,7 +24,9 @@ body {
     opacity: 1.5;
 }
 .vector-arc{
-    left: 1000px;
+    padding: 0px 0px 0px 1000px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .star-icon {
