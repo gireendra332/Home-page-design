@@ -9,6 +9,12 @@ import Section4 from './Section-4.jsx'
 import GridCards from './GridCards.jsx'
 import TopCategory from './TopCategory.jsx'
 import Footer from './Footer.jsx'
+import Features from './Features.jsx'
+// import Backdround from './LastPage.jsx'
+import FAQ from './questions.jsx'
+import ContactForm from './Contact.jsx'
+import Testimonails from './Testimonials.jsx'
+
 function App() {
   return (
     <div>
@@ -21,8 +27,15 @@ function App() {
       <Section4/>
       <GridCards/>
       <TopCategory/>
+      <Features/>
+      <FAQ/> 
+      <ContactForm/>
+      <Testimonails/>
       <Footer/>
+      {/* <LastPage/> */}
+      
 
+      
     </div>
   )
 }

@@ -1,0 +1,108 @@
+.contact-wrapper {
+    position: relative;
+    background-color: #F5F5F5;
+    padding: 50px;
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+  }
+  
+  .contact-image img {
+    max-width: 450px;
+    height: auto;
+    position: relative;
+    left: 200px;
+    
+  }
+  
+  .contact-form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left
+  }
+  
+  .contact-btn {
+    background-color:#FBC108;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #072F53;
+    margin-top: 15px;
+  }
+  
+  .contact-number {
+    color: #FBC108;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  form {
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #072F53;
+  }
+  
+  input,
+  textarea {
+    width: 150%;    
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .enquiry-btn {
+    background-color:#072F53;
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 156.06px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  } 
+  
+  
+  .top-right-image {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    width: 140px; 
+  }
+  
+  .bottom-left-image {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 140px; 
+  }
+  

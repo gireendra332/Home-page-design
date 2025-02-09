@@ -10,15 +10,15 @@ import githubLogo from './assets/github.png'
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Top Section with Feedback Button */}
+      
       <div className="feedback-section">
         <h2>Add Valuable Feedback</h2>
         <button className="feedback-btn">Add Feedback</button>
       </div>
 
-      {/* Main Footer Content */}
+    
       <div className="footer-content">
-        {/* Left Section - Logo and About */}
+        
         <div className="footer-about">
           <div className="logo">
             <img src={Logo} alt="CS Buzz Logo" />
