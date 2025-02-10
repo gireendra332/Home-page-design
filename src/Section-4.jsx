@@ -9,7 +9,7 @@ const Section = () => {
       <div className="corner-icon"></div>
       <div className="section-content">
         <h2 className="section-title">How It Works</h2>
-        <img src={Vectorarc} alt="vector arc" />
+        {/* <img src={Vectorarc} alt="vector arc" /> */}
         <p className="section-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

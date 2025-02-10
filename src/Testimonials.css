@@ -2,117 +2,114 @@
     text-align: center;
     padding: 50px 0;
     background-color: #f8f9fa;
-  }
-  
-  .testimonial-title {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.testimonial-title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .slider-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.slider-container {
     position: relative;
-  }
-  
-  .testimonial-cards {
-    display: flex;
+    padding: 0 40px;
     overflow: hidden;
-    width: 350px;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .testimonial-card {
-    position: absolute;
-    width: 300px;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 10px;
+    transition: all 0.5s ease;
+    padding: 20px 0;
+}
+
+.testimonial-card {
+    min-width: calc(33.333% - 50px);
     background: white;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  
-  .testimonial-card.active {
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.testimonial-card.active,
+.testimonial-card.inactive {
     opacity: 1;
-    transform: scale(1);
-  }
-  
-  .testimonial-card.inactive {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  
-  .testimonial-bg {
+    transform: none;
+}
+
+.testimonial-bg {
     position: absolute;
     bottom: -10px;
     left: -10px;
     width: 100%;
     height: 100%;
-    background: yellow;
+    background:#FBC108;
     border-radius: 15px;
     z-index: -1;
-  }
-  
-  .profile-pic {
+}
+
+.profile-pic {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  .role {
+}
+
+.role {
     font-size: 14px;
     color: gray;
-  }
-  
-  .quote {
+}
+
+.quote {
     font-size: 30px;
-    color: #fcb900;
+    color:
+    #FBC108;
     margin: 5px 0;
-  }
-  
-  .text {
+}
+
+.text {
     font-size: 14px;
     color: #444;
-  }
-  
-  /* Navigation Arrows */
-  .arrow {
-    background: none;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
+}
+
+/* Navigation Arrows */
+.arrow {
     position: absolute;
-  }
-  
-  .left-arrow {
-    left: -40px;
-  }
-  
-  .right-arrow {
-    right: -40px;
-  }
-  
-  /* Dots */
-  .dots {
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+/* Dots */
+.dots {
     margin-top: 20px;
-  }
-  
-  .dot {
+}
+
+.dot {
     height: 10px;
     width: 10px;
     background-color: gray;
@@ -120,9 +117,10 @@
     display: inline-block;
     margin: 0 5px;
     cursor: pointer;
-  }
-  
-  .active-dot {
+}
+
+.active-dot {
     background-color: black;
-  }
-  
+}
+
+

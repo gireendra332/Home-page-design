@@ -12,27 +12,33 @@
   background-color: #f8f9fa;
   border-radius: 10px;
   overflow: hidden;
+  padding: 10px;
 }
 
 .trending-topics {
   flex: 1;
-  display: flex;
-  gap: 10px;
   overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
   padding: 10px;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;     /* Hide scrollbar for Firefox */
 }
 
 .trending-topics::-webkit-scrollbar {
-  display: none;
+  display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.topics-container {
+  display: inline-flex; /* Ensures all spans stay in one line */
+  gap: 10px;
 }
 
 .trending-topics span {
   padding: 8px 16px;
   background-color: #e9ecef;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 18px;
   color: #555;
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -52,6 +58,7 @@
 }
 
 .scroll-arrow img {
-  width:10px;
+  width: 15px;
   height: auto;
+  cursor: pointer;
 }

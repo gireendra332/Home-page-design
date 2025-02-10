@@ -26,35 +26,33 @@ const testimonials = [
 ];
 
 const TestimonialSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [cards, setCards] = useState(testimonials);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
-    );
+  const rotateCards = (direction) => {
+    setCards((prevCards) => {
+      if (direction === "next") {
+        // Move first card to the end
+        const [firstCard, ...rest] = prevCards;
+        return [...rest, firstCard];
+      } else {
+        // Move last card to the beginning
+        const newCards = [...prevCards];
+        const lastCard = newCards.pop();
+        return [lastCard, ...newCards];
+      }
+    });
   };
 
   return (
     <div className="testimonial-section">
       <h2 className="testimonial-title">What Our Students Say</h2>
-
       <div className="slider-container">
-        <button className="arrow left-arrow" onClick={prevSlide}>
+        <button className="arrow left-arrow" onClick={() => rotateCards("prev")}>
           ❮
         </button>
-
         <div className="testimonial-cards">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.id}
-              className={`testimonial-card ${
-                index === currentIndex ? "active" : "inactive"
-              }`}
-            >
+          {cards.map((testimonial) => (
+            <div key={testimonial.id} className="testimonial-card">
               <div className="testimonial-bg"></div>
               <img src={testimonial.image} alt={testimonial.name} className="profile-pic" />
               <h3>{testimonial.name}</h3>
@@ -64,20 +62,9 @@ const TestimonialSlider = () => {
             </div>
           ))}
         </div>
-
-        <button className="arrow right-arrow" onClick={nextSlide}>
+        <button className="arrow right-arrow" onClick={() => rotateCards("next")}>
           ❯
         </button>
-      </div>
-
-      <div className="dots">
-        {testimonials.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === currentIndex ? "active-dot" : ""}`}
-            onClick={() => setCurrentIndex(index)}
-          ></span>
-        ))}
       </div>
     </div>
   );

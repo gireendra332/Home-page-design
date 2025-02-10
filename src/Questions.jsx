@@ -26,7 +26,7 @@ const FAQSection = () => {
     <div className="faq-container">
         <div className="faq-title-container">
       <h2 className="faq-title">Frequently asked questions</h2>
-      <img src={vector} alt="vecto arc" className="Vector"/>
+      {/* <img src={vector} alt="vecto arc" className="Vector"/> */}
         </div>
       <p className="faq-subtitle">
         Answers to Your Burning Questions: Unveiling the FAQ Section for

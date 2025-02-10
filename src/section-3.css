@@ -45,7 +45,7 @@ body {
 
 .badge {
     display: inline-block;
-    background: #ffc107;
+    background: #FBC108;
     color: black;
     font-weight: bold;
     padding: 10px 12px;
@@ -53,21 +53,21 @@ body {
 }
 
 h1 {
-    font-size: 26px;
-    color: #082c59;
+    font-size: 30px;
+    color:#072F53;
     font-weight: bold;
     margin-top: 10px;
 }
 
 p {
-    font-size: 16px;
-    color: #333;
+    font-size: 20px;
+    color: #072F53;
     line-height: 1.6;
     margin-top: 10px;
 }
 
 .btn {
-    background: #082c59;
+    background: #072F53;
     color: white;
     padding: 10px 16px;
     border: none;
@@ -78,7 +78,7 @@ p {
 }
 
 .btn:hover {
-    background: #ffc107;
+    background:#FBC108;
     opacity: 0.8;
     transition: 0.3s;
 }
