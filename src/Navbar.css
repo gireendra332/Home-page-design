@@ -152,3 +152,63 @@ body {
     color: #fff;
     cursor: pointer;
 }
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: #072F53;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    transition: 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .Login {
+    margin-right: 50px;
+  }
+}
